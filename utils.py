@@ -8,83 +8,83 @@ by raising a ZeroDivisionError.
 
 Functions
 ---------
-add(a: int, b: int) -> int
-    Returns the sum of a and b.
-subtract(a: int, b: int) -> int
-    Returns the difference between a and b.
-multiply(a: int, b: int) -> int
-    Returns the product of a and b.
-divide(a: int, b: int) -> float
-    Returns the division of a by b. Raises ZeroDivisionError if b is zero.
+add(first_num: int, second_num: int) -> int
+    Returns the sum of first_num and second_num.
+subtract(first_num: int, second_num: int) -> int
+    Returns the difference between first_num and second_num.
+multiply(first_num: int, second_num: int) -> int
+    Returns the product of first_num and second_num.
+divide(first_num: int, second_num: int) -> float
+    Returns the division of first_num by second_num. Raises ZeroDivisionError if second_num is zero.
 """
 
 
-def add(a: int, b: int) -> int:
+def add(first_num: int, second_num: int) -> int:
     """
-    Return the sum of a and b.
+    Return the sum of first_num and second_num.
 
     Parameters
     ----------
-    a : int
+    first_num : int
         First number to add.
-    b : int
+    second_num : int
         Second number to add.
 
     Returns
     -------
     int
-        The sum of a and b.
+        The sum of first_num and second_num.
     """
-    return a + b
+    return first_num + second_num
 
 
-def subtract(a: int, b: int) -> int:
+def subtract(first_num: int, second_num: int) -> int:
     """
-    Return the difference between a and b.
+    Return the difference between first_num and second_num.
 
     Parameters
     ----------
-    a : int
+    first_num : int
         The number to be subtracted from.
-    b : int
+    second_num : int
         The number to subtract.
 
     Returns
     -------
     int
-        The difference between a and b.
+        The difference between first_num and second_num.
     """
-    return a - b
+    return first_num - second_num
 
 
-def multiply(a: int, b: int) -> int:
+def multiply(first_num: int, second_num: int) -> int:
     """
-    Return the product of a and b.
+    Return the product of first_num and second_num.
 
     Parameters
     ----------
-    a : int
+    first_num : int
         First number to multiply.
-    b : int
+    second_num : int
         Second number to multiply.
 
     Returns
     -------
     int
-        The product of a and b.
+        The product of first_num and second_num.
     """
-    return a * b
+    return first_num * second_num
 
 
-def divide(a: int, b: int) -> float:
+def divide(first_num: int, second_num: int) -> float:
     """
-    Return the division of a by b.
+    Return the division of first_num by second_num.
 
     Parameters
     ----------
-    a : int
+    first_num : int
         The dividend.
-    b : int
+    second_num : int
         The divisor.
 
     Returns
@@ -95,8 +95,8 @@ def divide(a: int, b: int) -> float:
     Raises
     ------
     ZeroDivisionError
-        If b is zero.
+        If second_num is zero.
     """
-    if b == 0:
+    if second_num == 0:
         raise ZeroDivisionError("division by zero")
-    return a / b
+    return first_num / second_num
